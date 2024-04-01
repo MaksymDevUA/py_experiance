@@ -1,7 +1,7 @@
 import requests
 import time
 
-url = 'https://www.example.com'
+
 session = requests.Session() #The current session
 print(session) #Represented as object
 
@@ -16,7 +16,7 @@ def download_all_sites(sites): #open each site and perform download_site funct
             download_site(url, session)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": #Python idiom used to check if the current script is being run as the main program.
     sites = [
         "https://www.jython.org",
         "http://olympus.realpython.org/dice",

@@ -5,7 +5,7 @@ import time
 session = None
 
 
-def set_globa`l_session():
+def set_global_session():
     global session
     if not session:
         session = requests.Session()
